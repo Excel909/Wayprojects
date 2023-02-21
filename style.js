@@ -6,7 +6,7 @@ function scrollFunction() {
     document.getElementById("nav").style.background = "#111";
     document.getElementById("logo").style.fontSize = "19pt";
   } else {
-    document.getElementById("nav").style.height = "150px";
+    document.getElementById("nav").style.height = "130px";
     document.getElementById("nav").style.background= "#222";
     document.getElementById("logo").style.fontSize = "23pt";
   }
