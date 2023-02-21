@@ -92,5 +92,7 @@ a.home-act{
 
     .nav{
         height: 100px;
+        border-bottom: none;
+        background-color: #111;
     }
 }
