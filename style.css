@@ -139,5 +139,53 @@ body{
 .split{
     width: 100%;
     height: 50vh;
-    background-color: #222;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    position: relative;
+    overflow: hidden;
+}
+
+.line{
+    background-color: orangered;
+    top: -40px;
+    height: 65vh;
+    width: 5px;
+    position: absolute;
+    left: 400px;
+    transform: rotate(35deg);
+}
+
+.l{
+    position: absolute;
+    color:white;
+    left: 100px;
+    top:70px;
+    font-size: 25pt;
+    font-weight: 700;
+}
+
+.highlight{
+    color: orangered;
+}
+
+.r{
+    position: absolute;
+    color: white;
+    left: 60%;
+    top:30%;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.back{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+.full{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
