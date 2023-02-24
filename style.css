@@ -119,6 +119,8 @@ body{
     padding: 30px;
     /* position: fixed; */
     /* transition: 1s; */
+    display:flex;
+    justify-content: space-between;
 }
 
 .top-logo{
@@ -126,9 +128,11 @@ body{
     color: white;
     transition-duration:  1s;
 }
+
 #slide{
     transition: 1s;
 }
+
 .l-box{
     padding: 10px;
     background-color: orangered;
@@ -143,6 +147,37 @@ body{
     background-color: rgba(0, 0, 0, 0.9);
     position: relative;
     overflow: hidden;
+}
+
+.loader{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 5px solid #444;
+    animation: spin 1s linear infinite;
+    position: relative;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+        /* background-color: peru; */
+        border-bottom: 5px solid orangered;
+    }
+
+    to{
+        transform: rotate(360deg);
+        /* background-color: green; */
+        border-bottom:5px solid orangered;
+    }
+    /* 0%{
+        transform: rotate(0deg);
+        border-bottom-right-radius: 5px solid orangered;
+    }
+
+    100%{
+        transform: rotate(360deg);
+    } */
 }
 
 .line{
@@ -188,4 +223,53 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.train{
+    height: fit-content;
+    width:fit-content;
+    display: flex;
+    gap:50px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.tr-1,.tr-2,.tr-3{
+    width: 130px;
+    height: 130px;
+    background-color: orangered;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tr-icon{
+    font-size: 40pt;
+}
+.about{
+    background-color: #222;
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    height: fit-content;
+    text-align: left;
+    color: whitesmoke;
+    padding: 20px;
+    line-height: 1.4;
+}
+
+.about::first-line{
+    color: orangered;
+}
+
+.about::first-line{
+    font-size: 17pt;
+    font-family:arial;
+    font-weight: 700;
+}
+
+.about::first-letter{
+    font-size: 24pt;
 }
