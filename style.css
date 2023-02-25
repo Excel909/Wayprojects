@@ -79,7 +79,7 @@ body{
     width: 50px;
     height: 100%;
     font-size: 14pt;
-    position: absolute;
+    position: relative;
     background-color: orangered;
     margin-right: 10px;
     left: 30px;
@@ -88,7 +88,8 @@ body{
     display: flex;
     justify-content: space-around;
     color:#111;
-}
+    position: absolute;
+} 
 
 .link a{
     color:white;
@@ -272,4 +273,226 @@ body{
 
 .about::first-letter{
     font-size: 24pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:900px){
+    body{
+        margin:0;
+        padding: 0px;
+        background-color: whitesmoke;
+        width: 100%;
+        height: 200vh;
+    }
+    
+    *{
+        box-sizing: border-box;
+    }
+    
+    #contain{
+        width: 100%;
+        height: fit-content;
+        font-family: candara;
+    }
+    
+    .left{
+        display: none;
+    }
+    
+    .right{
+        margin-left: 0%;
+        width: 100%;
+        height: fit-content;
+        padding: 0px;
+        /* background-color: #222; */
+        height: fit-content;
+        background-color: whitesmoke;
+    }
+    
+    .logo{
+        width: fit-content;
+        margin: auto;
+    }
+    
+    .text{
+        padding: 25px;
+        width: 100%;
+        text-align: center;
+        color:#999;
+    }
+    
+    .text::first-line{
+        font-size: 14pt;
+        color: whitesmoke;
+    }
+    
+    
+    .top-nav{
+        width: 100%;
+        background-color: whitesmoke;
+        height: 100px;
+        text-align: left;
+        border-bottom: 5px solid orangered;
+        padding: 30px;
+        /* position: fixed; */
+        /* transition: 1s; */
+        display:flex;
+        justify-content: space-around;
+    }
+    
+    .top-logo{
+        font-size: 20pt;
+        color: black;
+        transition-duration:  1s;
+    }
+    
+    #slide{
+        transition: 1s;
+    }
+    
+    .l-box{
+        padding: 10px;
+        background-color: orangered;
+        margin-right: 10px;
+        border-radius: 10px;
+    }
+    
+    .loader{
+        display: none;
+    }
+    
+   
+    
+    .line{
+        background-color: orangered;
+        top: -40px;
+        height: 65vh;
+        width: 5px;
+        position: absolute;
+        left: 400px;
+        transform: rotate(35deg);
+    }
+    
+    .l{
+        position: absolute;
+        color:white;
+        left: 100px;
+        top:70px;
+        font-size: 25pt;
+        font-weight: 700;
+    }
+    
+    .highlight{
+        color: orangered;
+    }
+    
+    .r{
+        position: absolute;
+        color: white;
+        left: 60%;
+        top:30%;
+        line-height: 1.5;
+        text-transform: capitalize;
+    }
+    
+    .back{
+        display: none;
+    }
+    
+    .full{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .train{
+        height: fit-content;
+        width:80%;
+        display: flex;
+        gap:0px;
+        justify-content: space-evenly;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    .tr-1,.tr-2,.tr-3{
+        width:20%;
+        height: 100%;
+        background-color: orangered;
+        border-radius: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .tr-icon{
+        font-size: 30pt;
+    }
+    .about{
+        background-color: #222;
+        width: 60%;
+        margin: auto;
+        margin-top: 40px;
+        height: fit-content;
+        text-align: left;
+        color: whitesmoke;
+        padding: 20px;
+        line-height: 1.4;
+    }
+    
+    .about::first-line{
+        color: orangered;
+    }
+    
+    .about::first-line{
+        font-size: 17pt;
+        font-family:arial;
+        font-weight: 700;
+    }
+    
+    .about::first-letter{
+        font-size: 24pt;
+    }
+    
+    
+    
 }
