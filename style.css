@@ -279,8 +279,13 @@ body{
     display: none;
 }
 
+.nav-profile{
+    display: none;
+}
 
-
+.nav-link{
+    display: none;
+}
 
 
 
@@ -458,7 +463,7 @@ body{
     
     .train{
         height: fit-content;
-        width:80%;
+        width:90%;
         display: flex;
         gap:0px;
         justify-content: space-evenly;
@@ -467,13 +472,13 @@ body{
     }
     
     .tr-1,.tr-2,.tr-3{
-        width:20%;
+        width:75px;
         height: 100%;
         background-color: orangered;
         border-radius: 100%;
         text-align: center;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         padding:10px;
     }
@@ -482,14 +487,15 @@ body{
         font-size: 30pt;
     }
     .about{
-        background-color: #222;
-        width: 60%;
+        background-color: transparent;
+        width: 90%;
         margin: auto;
         margin-top: 40px;
         height: fit-content;
         text-align: left;
-        color: whitesmoke;
+        color:black;
         padding: 20px;
+        font-weight: 600;
         line-height: 1.4;
     }
     
@@ -507,6 +513,79 @@ body{
         font-size: 24pt;
     }
     
+    .nav-profile{
+        display: block;
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .nav-p{
+        width: 130px;
+        margin: auto;
+        height: 130px;
+        border-radius: 100%;
+        border: 2px solid orangered;
+    }
     
+    .nav-link{
+        width: 100%;
+        height:100%;
+        background:rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        display: block;
+        position: absolute;
+        width: 100%;
+    }
+
+    #nav-link{
+        left:-100%;
+    }
+
+    #nav-link:target{
+        left:0%;
+        transition-duration: 0.6s;
+    }
     
+    .nav-ul{
+        width: 70%;
+        background-color: #111;
+        height: 100%;
+    }
+
+    .nav-tech{
+        color: white;
+        padding: 10px;
+        font-size: 20pt;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 20vh;
+        color: orangered;
+    }
+
+    .nav-ul ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .nav-ul a{
+        color: white;
+        padding: 15px;
+        display: block;
+        font-size: 14pt;
+        text-decoration: none;
+    }
+
+    .nav-ul a:hover{
+        color: orangered;
+        background-color: #222;
+    }
+
+
 }
